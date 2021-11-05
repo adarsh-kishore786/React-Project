@@ -1,0 +1,10 @@
+.main {
+    position: absolute;
+    background: #add8e6;
+    top: 45px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}

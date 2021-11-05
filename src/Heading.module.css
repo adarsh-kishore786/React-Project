@@ -1,0 +1,10 @@
+.heading {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    background: #E3B;
+    height: 45px;
+    font-size: 32px;
+}

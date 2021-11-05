@@ -8,7 +8,10 @@ class App extends React.Component {
         return (
             <div>
                 <Heading textContent="A Sample Form Application Website"/>
-                <Main />
+                <Main
+                    name="John Doe"
+                    age="27"
+                />
                 <Footer textContent="For WOC 2021"/>
             </div>
         );

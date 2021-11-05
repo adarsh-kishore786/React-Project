@@ -1,10 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .main {
     position: absolute;
-    background: #add8e6;
+    background-image: url("images/library.jpg");
     top: 45px;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.welcome {
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 1.0;
+    color: #4f6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form {
+    opacity: 1;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: left;
+    gap: 10px;
+}
+
+.text {
+    line-height: 20px;
+}
+
+.fillInfo {
+
 }

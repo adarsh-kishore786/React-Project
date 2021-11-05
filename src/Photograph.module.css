@@ -1,0 +1,11 @@
+.image {
+    border: 2px solid #fff;
+    color: #000;
+    width: 128px;
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: grey;
+}

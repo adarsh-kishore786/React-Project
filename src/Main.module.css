@@ -2,13 +2,14 @@
 
 .main {
     position: absolute;
+    background: #fff;
     background-image: url("images/library.jpg");
     top: 45px;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     align-items: center;
     gap: 50px;
 }
@@ -18,29 +19,52 @@
     font-size: 40px;
     font-weight: bold;
     opacity: 1.0;
-    color: #4f6;
+    color: #300a24;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .form {
     opacity: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100vw;
 }
 
 .info {
     display: flex;
-    flex-direction: column;
-    color: #fff;
+    flex-direction: row;
+    color: #000;
     text-align: left;
     gap: 10px;
 }
 
+.subsection {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial;
+    color: #2f5d6e;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
 .text {
     line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    justify-content: flex-start;
 }
 
 .fillInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    text-align: right;
+    margin-left: 10px;
+}
 
+@media only screen and (max-width: 500px) {
+    .form {
+        flex-direction: column;
+    }
 }

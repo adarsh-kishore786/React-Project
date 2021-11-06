@@ -8,6 +8,7 @@ class Main extends React.Component {
     render() {
         return (
             <div className={styles.main}>
+                {this.props.children}
                 <div className={styles.welcome}>
                     Welcome to Vivlio Library!
                 </div>
@@ -24,12 +25,17 @@ class Main extends React.Component {
                         <TextInput label="email" placeHolder="johndoe@example.com" />
                     </div>
 
-                    <div className={styles.info}>
-                        <Photograph />
+                    <div className={styles.border}>
+                        <h1>Membership card</h1>
+                        <div className={styles.info}>
+                            <Photograph />
 
-                        <div className={styles.text}>
-                            Name: {this.props.name} <br />
-                            Age : {this.props.age}
+                            <div className={styles.text}>
+                                Name: {this.props.name} <br />
+                                Age : {this.props.age} <br />
+                                Contact: {this.props.contact} <br />
+                                Email: {this.props.email}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -8,3 +8,10 @@
     height: 45px;
     font-size: 32px;
 }
+
+@media only screen and (max-width: 500px) {
+    .heading {
+        font-size: 20px;
+        height: 30px;
+    }
+}

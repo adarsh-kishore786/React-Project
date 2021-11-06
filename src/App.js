@@ -7,12 +7,15 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Heading textContent="A Sample Form Application Website"/>
                 <Main
                     name="John Doe"
-                    age="27"
-                />
-                <Footer textContent="For WOC 2021"/>
+                    age="30"
+                    contact="ABCDEFGHIJ"
+                    email="johndoe@example.com"
+                >
+                    <Heading textContent="A Sample Form Application Website"/>
+                    <Footer textContent="For WOC 2021"/>
+                </Main>
             </div>
         );
     }

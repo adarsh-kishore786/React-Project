@@ -4,9 +4,9 @@
     left: 0;
     right: 0;
     text-align: center;
-    background: #222;
+    background: transparent;
     box-shadow: 0 0 15px #333;
     height: 40px;
-    color: #fff;
+    color: #222;
     font-size: 35px;
 }

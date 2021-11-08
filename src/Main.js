@@ -5,6 +5,7 @@ import Photograph from "./Photograph";
 import TextInput from "./TextInput";
 
 class Main extends React.Component {
+
     render() {
         return (
             <div className={styles.main}>
@@ -19,10 +20,11 @@ class Main extends React.Component {
                         <div className={styles.subsection}>
                             Fill your information here
                         </div>
-                        <TextInput label="name" placeHolder="John Doe" />
-                        <TextInput label="age" placeHolder="30" />
-                        <TextInput label="contact" placeHolder="10 digit number"/>
-                        <TextInput label="email" placeHolder="johndoe@example.com" />
+                        <TextInput label="name" placeHolder={this.props.name} handleChange={this.props.handleChange}/>
+                        <TextInput label="age" placeHolder={this.props.age} handleChange={this.props.handleChange}/>
+                        <TextInput label="contact" placeHolder={this.props.contact}
+                            handleChange={this.props.handleChange} />
+                        <TextInput label="email" placeHolder={this.props.email} handleChange={this.props.handleChange} />
                     </div>
 
                     <div className={styles.border}>
@@ -36,6 +38,11 @@ class Main extends React.Component {
                                 Contact: {this.props.contact} <br />
                                 Email: {this.props.email}
                             </div>
+
+                        </div>
+                        <button className={styles.submit} onClick={this.props.handleSubmit}>Submit</button>
+                        <div className={styles.result}>
+                            {this.props.msg}
                         </div>
                     </div>
                 </div>

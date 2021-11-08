@@ -9,8 +9,10 @@ class TextInput extends React.Component {
                     Enter {this.props.label} here:
                 </label>
                 <input
+                    name={this.props.label}
                     className={styles.input}
-                    placeHolder={this.props.placeHolder}
+                    placeholder={this.props.placeHolder}
+                    onChange={this.props.handleChange}
                 >
                 </input>
             </div>
